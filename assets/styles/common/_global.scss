@@ -1,13 +1,67 @@
 body{
 	font-family: 'Cormorant', serif;
+	background-image: url("../images/cartographer.png");
+	background-size: 300px 300px;
+	background-repeat: repeat;
+	border-top: 5px solid $brand-primary;
+	//background-color: $brand-secondary;
+    //background-blend-mode: darken;
+    background-attachment: fixed;
 }
+
 .brand {
-	@include logo("../images/logo.png",144px,70px);
+	@include logo("../images/logo.png",100%);
 }
 .bio-img {
+	text-align:center;
 	img {
 	border-radius:50%;
 	width:100px;
 	box-shadow:0px 0px 20px 7px rgba(0, 0, 0, 0.25);
 	}
 }
+.container{
+	border-left: 1px lighten($body-bg,10) solid;
+	padding: 20px 0 0 20px;
+	}
+#categories {
+	text-align: center;
+	.bold{
+		display: block;
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+	.catName{
+		font-size: .8em;
+	}
+	a, a:link{
+		text-decoration: none;
+		display: block;
+	}
+	a:hover{
+		  color: $brand-secondary;
+		  background: none;
+	}
+}
+
+#categories .borderRight{
+	border-right: 1px solid lighten($body-bg,10);
+	border-left: 1px solid lighten($body-bg,10);
+	margin: 0 -1px 0;
+}
+
+ul.where-else  {
+	padding: 0 10px;
+	margin: 5px 4px 0 0;
+	float: right;
+	li { float: left; padding: 0 6px 0 0;list-style: none;
+		a, a:link { text-decoration: none; color: #3C3C3C;}
+		a:hover {color: #45D49B;}
+		}
+	}
+	
+.quote {
+	padding-left:8px; color:#646464; 
+	a{font-weight:400;font-size: 2.2em;line-height: 1.05em;color:#646464;text-decoration: none;&:hover {color: #45D49B;} }
+	
+	.small{font-size: .8em; color:#646464;}}

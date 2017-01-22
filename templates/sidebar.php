@@ -1,4 +1,3 @@
-<?php //dynamic_sidebar('sidebar-primary'); ?>
 	<div class="sidebar-nav-fixed" data-spy="affix">
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'main' ) ) : ?>
@@ -38,7 +37,7 @@
 						<li><a href="http://www.instagram.com/petebernardo/" rel="tooltip" title="instagram.com/petebernardo"><i class="fa fa-camera-retro"></i></a></li>
 					</ul>
 				</aside>
-				<aside class="quote"><a href="https://twitter.com/jack/status/17680161621151744" rel="tooltip" data-toggle="tooltip" title="What I believe in.">Make every detail perfect and limit the number of details to perfect.<br/></a><span class="small">- @jack</span></aside>
+				<h2 class="quote"><a href="https://twitter.com/jack/status/17680161621151744" rel="tooltip" data-toggle="tooltip" title="What I believe in.">Make every detail perfect and limit the number of details to perfect.<br/></a><span class="small">- @jack</span></h2>
 
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->

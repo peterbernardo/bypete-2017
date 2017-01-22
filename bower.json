@@ -18,5 +18,12 @@
       "./scss/font-awesome.scss",
       "./fonts/*"
     ]
+  },
+  "overrides": {
+  "sticky": {
+    "main": [
+      "./jquery.sticky.js"
+    ]
   }
+}
 }

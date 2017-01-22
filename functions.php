@@ -26,3 +26,71 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+function slug_icon($slug_name){
+  switch($slug_name){
+    
+    case 'photos':
+    echo "<i class=\"fa fa-camera-retro\"></i>";
+    break;
+    
+    case 'articles':
+    echo "<i class=\"fa fa-pencil\"></i>";
+    break;
+    
+    case 'inspirations':
+    echo "<i class=\"fa fa-bolt\"></i>";
+    break;
+  }
+}
+function format_icon($format_type){
+  switch($format_type){
+    
+    case 'image':
+    echo "<i class=\"arrow fa fa-camera-retro\"></i>";
+    break;
+    case 'aside':
+    echo "<i class=\"fa fa-pencil\"></i>";
+    break;
+    case 'link':
+    echo "<i class=\"arrow fa fa-external-link\"></i>";
+    break;
+    case 'quote':
+    echo "<i class=\"arrow fa fa-quote-left\"></i>";
+    break;
+    case 'status':
+    echo "<i class=\"arrow fa fa-twitter\"></i>";
+    break;
+    case 'video':
+    echo "<i class=\"arrow fa fa-play-circle\"></i>";
+    break;
+    default:
+    echo "<i class=\"arrow fa fa-bolt\"></i>";
+    break;
+
+
+  }
+}
+add_filter( 'body_class', 'twentyeleven_body_classes' );
+add_shortcode('bp_image',  'bp_image' );
+function bp_image($atts, $content = null) {
+    extract(shortcode_atts(array( 'lat' => '',
+                    'lng' => '',
+                    'likes' => '',
+                    'src' => '',
+                    'alt' => '',
+                    'url' => ''  ), $atts));
+    $html = '';
+    $html .= '<p><img class="instagram_photo"  ';
+    $html .= 'alt="'.$alt.'" ';
+    $html .= 'src="'.$src.'" ';
+
+    $html .= 'data-lat="'.$lat.'" ';
+    $html .= 'data-lng="'.$lng.'" ';
+    $html .= 'data-url="'.$url.'" ';
+    $html .= 'data-likes="'.$likes.'" ';
+    $html .= '></p>';
+  
+    return $html;
+  }

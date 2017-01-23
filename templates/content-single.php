@@ -1,4 +1,6 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>><div class="meta" data-spy="scroll">
+
+<?php while (have_posts()) : the_post(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>><div class="meta hidden-sm-down" data-spy="scroll">
 <?php format_icon(get_post_format()); ?>
   <div class="date">
     <div class="month"><?php echo get_the_date('M'); ?></div>
@@ -57,5 +59,8 @@
       </div><!-- #author-description -->
     </div><!-- #author-info -->
     <?php endif; ?>
+
   </footer><!-- .entry-meta -->
+  <?php comments_template('/templates/comments.php'); ?>
 </article><!-- #post-<?php the_ID(); ?> -->
+<?php endwhile; ?>

@@ -1,15 +1,5 @@
-<?php
-/**
- * The default template for displaying content
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
-?>
-
-	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-	<div class="meta" data-spy="scroll">
+<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+	<div class="meta hidden-sm-down" data-spy="scroll">
 	<?php format_icon(get_post_format()); ?>
 	<div class="date">
 		<div class="month"><?php echo get_the_date('M'); ?></div>

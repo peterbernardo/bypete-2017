@@ -13,7 +13,8 @@ function title() {
       return __('', 'sage');
     }
   } elseif (is_archive()) {
-    return get_the_archive_title();
+    return;
+    //return get_the_archive_title();
   } elseif (is_search()) {
     return sprintf(__('Search Results for %s', 'sage'), get_search_query());
   } elseif (is_404()) {

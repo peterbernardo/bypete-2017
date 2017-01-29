@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-	<div class="meta hidden-sm-down" data-spy="scroll">
+	<div class="meta hidden-sm-down">
 	<?php format_icon(get_post_format()); ?>
 	<div class="date">
 		<div class="month"><?php echo get_the_date('M'); ?></div>

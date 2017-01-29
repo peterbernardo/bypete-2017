@@ -1,4 +1,4 @@
-	<div class="sidebar-nav-fixed" data-spy="affix">
+	<div class="sidebar-nav-fixed">
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'main' ) ) : ?>
 				

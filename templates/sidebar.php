@@ -1,7 +1,7 @@
 	<div class="sidebar-nav-fixed">
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'main' ) ) : ?>
-				
+
 				<aside id="branding" class="widget">
 					<header id="branding" role="banner">
 						<hgroup>
@@ -16,14 +16,14 @@
 				</aside>
 				<aside id="categories">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-xs-4">
 						<a href="<?php $category_id = get_cat_ID( 'Photos' );$category_link = get_category_link( $category_id );echo($category_link);$thisCat = get_category($category_id);?> ">
 							<span class="bold"><?php echo $thisCat->count;?></span>
 							<span class="catName">Photos</span>
 						</a>
 						</div>
-					<div class="col-sm-4 borderRight"><a href="<?php $category_id = get_cat_ID( 'Articles' );$category_link = get_category_link( $category_id );echo($category_link);$thisCat = get_category($category_id);?> "><span class="bold"><?php echo $thisCat->count;?></span><span class="catName">Articles</span></a></div>
-					<div class="col-sm-4"><a href="<?php $category_id = get_cat_ID( 'Inspirations' );$category_link = get_category_link( $category_id );echo($category_link);$thisCat = get_category($category_id);?> "><span class="bold"><?php echo $thisCat->count;?></span><span class="catName">Inspirations</span></a></div>
+					<div class="col-xs-4 borderRight"><a href="<?php $category_id = get_cat_ID( 'Articles' );$category_link = get_category_link( $category_id );echo($category_link);$thisCat = get_category($category_id);?> "><span class="bold"><?php echo $thisCat->count;?></span><span class="catName">Articles</span></a></div>
+					<div class="col-xs-4"><a href="<?php $category_id = get_cat_ID( 'Inspirations' );$category_link = get_category_link( $category_id );echo($category_link);$thisCat = get_category($category_id);?> "><span class="bold"><?php echo $thisCat->count;?></span><span class="catName">Inspirations</span></a></div>
 				</div>
 				</aside>
 				<aside id="bio" class="widget">

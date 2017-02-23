@@ -1,88 +1,97 @@
 body{
-	background-image: url("../images/cartographer.png");
-	background-size: 300px 300px;
-	background-repeat: repeat;
-	border-top: 5px solid $brand-primary;
-	//background-color: $brand-secondary;
+  background-image: url("../images/cartographer.png");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  border-top: 5px solid $brand-primary;
+  //background-color: $brand-secondary;
     //background-blend-mode: darken;
     background-attachment: fixed;
     color: $gray-light;
 }
 
 .brand {
-	@include logo("../images/logo.png",100%);
+  @include logo("../images/logo.png",100%);
 }
 .container{
-	border-left: 1px $gray-dark solid;
-	padding: 20px;
-	@include media-breakpoint-down(sm) {
-		border:none;
-	}
+  border-left: 1px $gray-dark solid;
+  padding: 20px;
+  @include media-breakpoint-down(sm) {
+    border:none;
+  }
 }
-
+.sidebar-nav-fixed {
+  position:fixed;
+  max-width:360px;
+  margin-right: 40px;
+  @include media-breakpoint-down(sm) {
+    position: initial;
+    margin: 0 40px;
+    max-width:none;
+  }
+}
 #bio {
-	font-size:.9em;
-	padding:10px 0;
+  font-size:.9em;
+  padding:10px 0;
 }
 .bio-img {
-	text-align:center;
-	img {
-	border-radius:50%;
-	width:100px;
-	box-shadow:0px 0px 20px 7px rgba(0, 0, 0, 0.25);
-	}
+  text-align:center;
+  img {
+  border-radius:50%;
+  width:100px;
+  box-shadow:0px 0px 20px 7px rgba(0, 0, 0, 0.25);
+  }
 }
 
 #categories {
-	text-align: center;
-	color: $gray-light;
-	@include media-breakpoint-down(md) {
-		font-size:1em;
+  text-align: center;
+  color: $gray-light;
+  @include media-breakpoint-down(md) {
+    font-size:1em;
 
-	}
-	.bold{
-		display: block;
-		font-size: .9em;
-		line-height:1em;
-	}
-	.catName{
-		font-size: .9em;
-	}
-	a, a:link{
-		color: $gray-light;
-		text-decoration: none;
-		display: block;
-	}
-	a:hover{
-		color: $brand-primary;
-		background: none;
-	}
+  }
+  .bold{
+    display: block;
+    font-size: .9em;
+    line-height:1em;
+  }
+  .catName{
+    font-size: .9em;
+  }
+  a, a:link{
+    color: $gray-light;
+    text-decoration: none;
+    display: block;
+  }
+  a:hover{
+    color: $brand-primary;
+    background: none;
+  }
 }
 
 ul.where-else  {
-	padding: 0 10px;
-	margin: 5px 4px 0 0;
-	float: right;
-	li { float: left; padding: 0 6px 0 0;list-style: none;
-		a, a:link { text-decoration: none; color: #3C3C3C;}
-		a:hover {color: #45D49B;}
-		}
-	}
-	
-.quote {
-	color:#646464; 
-	a { 
-		font-weight:400;line-height: 1.05em;color:#646464;text-decoration: none;
-		&:hover {color: #45D49B;} 
+  padding: 0 10px;
+  margin: 5px 4px 0 0;
+  float: right;
+  li { float: left; padding: 0 6px 0 0;list-style: none;
+    a, a:link { text-decoration: none; color: #3C3C3C;}
+    a:hover {color: #45D49B;}
+    }
+  }
 
-	}
-	.small{font-size: .8em; color:#646464;}
-	@include media-breakpoint-down(md) {
-			font-size:1em;
-		}
+.quote {
+  color:#646464;
+  a {
+    font-weight:400;line-height: 1.05em;color:#646464;text-decoration: none;
+    &:hover {color: #45D49B;}
+
+  }
+  .small{font-size: .8em; color:#646464;}
+  @include media-breakpoint-down(md) {
+      font-size:1em;
+    }
 }
 blockquote {
-	border-left: 6px solid $brand-primary;
+  border-left: 6px solid $brand-primary;
     font-size: 1.5em;
     padding: 10px 10px 10px 22px;
     margin: 10px -23px;
@@ -90,53 +99,53 @@ blockquote {
 }
 
 .entry-content p{
-	padding: 0;
-	font-size: 1em;
-	line-height: 1.7em;
-	color: $gray-lighter;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: $gray-lighter;
 }
 
 .format-image .entry-content p{
-	margin: 0;
+  margin: 0;
 }
 .entry-content p img{
-	max-width: 112%;
-	width: 112%;
-	height:auto;
-	margin: 20px 0 20px -12%;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.60);
-	@include media-breakpoint-down(sm) {
-		width:100%;
-		max-width:100%;
-		margin:0 auto;
+  max-width: 112%;
+  width: 112%;
+  height:auto;
+  margin: 20px 0 20px -12%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.60);
+  @include media-breakpoint-down(sm) {
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
    }
 }
 .byline {
-	font-size:.85em;
-	margin: 0 0 20px;
+  font-size:.85em;
+  margin: 0 0 20px;
 }
 .cat_icon{
-	height: auto;
-	position: absolute;
-	margin-left: -85px;
-	width: 40px;
-	padding: 16px 10px 0;
-	text-align: center;
-	text-transform: uppercase;
-	z-index: 1030;
-	font-size: 2.5em;
+  height: auto;
+  position: absolute;
+  margin-left: -85px;
+  width: 40px;
+  padding: 16px 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1030;
+  font-size: 2.5em;
 }
 .meta {
-	height: auto;
-	position: absolute;
-	margin:-20px 0 0 -85px;
-	width: 50px;
-	padding: 10px 0;
-	text-align: center;
-	text-transform: uppercase;
-	z-index: 100;
-	text-shadow: 0px 2px 6px black;
-	color:$gray-light;
+  height: auto;
+  position: absolute;
+  margin:-20px 0 0 -85px;
+  width: 50px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 100;
+  text-shadow: 0px 2px 6px black;
+  color:$gray-light;
 }
 
 .meta .arrow{
@@ -150,40 +159,40 @@ color:$gray-lighter;
 
 }
 .meta .arrow.fa-bolt{
-	left: 60px;
-	font-size: 1.5em;
+  left: 60px;
+  font-size: 1.5em;
 }
 .meta .arrow.fa-lightbulb{
-	left: 58px;
-	font-size: 1.5em;
+  left: 58px;
+  font-size: 1.5em;
 }
 .meta .date {color:$gray-lighter;display: block; padding-bottom: 10px;padding-top: 20px;width:50px;text-align: center;}
 .meta .date .month {letter-spacing: 1px;font-size: .9em;line-height:1em;}
 .meta .date .day {font-size: 1.4em;}
 .meta-info{
-	a,a:link{text-decoration: none;}
+  a,a:link{text-decoration: none;}
 }
 .meta-comments{text-align: right;}
 .meta .commentCount {
-	font-size: 2em;
-	margin-top: 10px;
-	color:rgba(256,256,256,.5);
-	a{
-	text-decoration: none;
-	}
-	a:hover{
-		text-decoration: none;
-		background: none;
-	}
+  font-size: 2em;
+  margin-top: 10px;
+  color:rgba(256,256,256,.5);
+  a{
+  text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+    background: none;
+  }
 }
 article footer{font-size: .8em;}
 .entry-meta{
-	margin: 0 0 50px;
-	padding: 5px 0;
-	font-size: .85em;
+  margin: 0 0 50px;
+  padding: 5px 0;
+  font-size: .85em;
 }
 .my-wrapper {position: absolute;}
 
 .entry-title a{
-	text-decoration: none;
+  text-decoration: none;
 }

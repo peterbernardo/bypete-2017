@@ -32,15 +32,15 @@ function slug_icon($slug_name){
   switch($slug_name){
     
     case 'photos':
-    echo "<i class=\"fa fa-camera-retro\"></i>";
+    echo "<i class=\"fas fa-camera-retro\"></i>";
     break;
     
     case 'articles':
-    echo "<i class=\"fa fa-pencil\"></i>";
+    echo "<i class=\"fas fa-pencil\"></i>";
     break;
     
     case 'inspirations':
-    echo "<i class=\"fa fa-bolt\"></i>";
+    echo "<i class=\"fas fa-bolt\"></i>";
     break;
   }
 }
@@ -48,25 +48,25 @@ function format_icon($format_type){
   switch($format_type){
     
     case 'image':
-    echo "<i class=\"arrow fa fa-camera-retro\"></i>";
+    echo "<i class=\"arrow fas fa-camera-retro\"></i>";
     break;
     case 'aside':
-    echo "<i class=\"fa fa-pencil\"></i>";
+    echo "<i class=\"fas fa-pencil\"></i>";
     break;
     case 'link':
-    echo "<i class=\"arrow fa fa-external-link\"></i>";
+    echo "<i class=\"arrow fas fa-external-link\"></i>";
     break;
     case 'quote':
-    echo "<i class=\"arrow fa fa-quote-left\"></i>";
+    echo "<i class=\"arrow fas fa-quote-left\"></i>";
     break;
     case 'status':
-    echo "<i class=\"arrow fa fa-twitter\"></i>";
+    echo "<i class=\"arrow fab fa-twitter\"></i>";
     break;
     case 'video':
-    echo "<i class=\"arrow fa fa-play-circle\"></i>";
+    echo "<i class=\"arrow fas fa-play-circle\"></i>";
     break;
     default:
-    echo "<i class=\"arrow fa fa-bolt\"></i>";
+    echo "<i class=\"arrow fas fa-bolt\"></i>";
     break;
 
 

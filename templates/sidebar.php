@@ -11,6 +11,12 @@
 								</a>
 							</div>
 							<a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+					<ul class="where-else">
+						<li><a href="http://twitter.com/petebernardo" rel="tooltip" title="twitter.com/petebernardo"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="http://facebook.com/petebernardo" rel="tooltip" title="facebook.com/petebernardo"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="http://www.linkedin.com/in/petebernardo/" rel="tooltip" title="linkedin.com/in/petebernardo/"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="http://www.instagram.com/petebernardo/" rel="tooltip" title="instagram.com/petebernardo"><i class="fab fa-instagram"></i></a></li>
+					</ul>
 						</hgroup>
 					</header><!-- #branding -->
 				</aside>
@@ -27,16 +33,9 @@
 				</div>
 				</aside>
 				<aside id="bio" class="widget">
-					<p>Father, Husband, &amp; Miami Hurricane. During the day I'm the Director of Design & UX for <a href="http://www.352media.com">352</a> in Atlanta.</p>
+					<p>Father, Husband, &amp; Miami Hurricane. I'm an indie builder working on <a href="https://punchli.st">Punchli.st</a>, a lightweight tool for designers to get feedback, in Atlanta, GA.</p>
 				</aside>
-				<aside>
-					<ul class="where-else">
-						<li><a href="http://twitter.com/petebernardo" rel="tooltip" title="twitter.com/petebernardo"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="http://facebook.com/petebernardo" rel="tooltip" title="facebook.com/petebernardo"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="http://www.linkedin.com/in/petebernardo/" rel="tooltip" title="linkedin.com/in/petebernardo/"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="http://www.instagram.com/petebernardo/" rel="tooltip" title="instagram.com/petebernardo"><i class="fa fa-camera-retro"></i></a></li>
-					</ul>
-				</aside>
+
 				<h2 class="quote"><a href="https://twitter.com/jack/status/17680161621151744" rel="tooltip" data-toggle="tooltip" title="What I believe in.">Make every detail perfect and limit the number of details to perfect.<br/></a><span class="small">- @jack</span></h2>
 
 			<?php endif; // end sidebar widget area ?>
